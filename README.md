@@ -1,0 +1,1 @@
+# amdaris_typescript_classes_homework
