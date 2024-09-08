@@ -110,3 +110,40 @@ let phoneArray: Array<Smartphone> = [
 phoneArray.forEach((phone) => {console.log(phone.getPhoneNumber)});
 
 phoneArray[0].call(phoneArray[3]);
+
+
+//Abstract class Animal
+
+abstract class Animal {
+    abstract name: string;
+    abstract age: number;
+    constructor(){};
+    abstract produceNoise(): void;
+    abstract eat(): void;
+    abstract sleep(): void;
+    abstract play(): void;
+}
+
+class Ratoon extends Animal {
+    name: string;
+    age: number;
+    
+    constructor(name: string, age: number) {
+        super();
+        this.name=name;
+        this.age=age;
+    }
+
+    produceNoise(): void {
+        console.log("SHHHHHH");;
+    }
+    eat(): void {
+        console.log("CHRUM");;
+    }
+    sleep(): void {
+        console.log("SHHHH");
+    }
+    play(): void {
+        console.log("Play with a ball");
+    }
+}
